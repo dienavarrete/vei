@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    font-family: "Segoe UI", "Open Sans", Arial, sans-serif !important;
 }
 
 .content {
@@ -9,8 +10,7 @@ body, html {
 }
 
 .header {
-    background: rgb(76, 175, 80);
-    background: linear-gradient(180deg, rgba(76, 175, 80, 1) 0%, rgba(102, 237, 106, 1) 100%);
+    background-color:  rgba(76, 175, 80, 1);
     flex: 0 1 25%;
     display: flex;
     flex-direction: column;
@@ -18,35 +18,121 @@ body, html {
     height: 100%;
 }
 
-.header-top {
-    padding-top: 5px;
-}
 
 .header h1 {
     color: white;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .logos {
+    margin: .5rem 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logos img{
+    margin: 0.5rem 0;
+}
+
+hr{
+    background-color:#AFF0B1;
+    width: 80%;
 }
 
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 0;
-    padding: .5rem;
+    padding: 0 .5rem;
+}
+
+.login h1{
+    margin-bottom: 1rem;
 }
 
 .login form {
     width: 100%;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.521);
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:none;
+}
+
+input{
+    border:none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+.titulo-noticias{
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.titulo-noticias h3,h4{
+    font-weight: bold;
+    color: rgba(76, 175, 80, 1);
+    padding: 0;
+    margin: 0;
 }
 
 main {
-    /*background: red;*/
     flex: 0 1 75%;
+    overflow-y: auto;
+}
+
+.leer-mas{
+    text-decoration: underline;
+}
+.campo-form{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
+.info{
+    position: absolute !important;
+   z-index: 10000 !important;
+
+}
+
+.desplegable{
+    border-bottom:1px solid white;
+}
+
+.desplegable a{
+    color:white;
+    
+}
+
+.menu-info{
+    background-color:  rgba(0, 0, 0, 0.801) !important;
+}
+
+.info ul li:hover{
+    background-color: rgba(255, 255, 255, 0.822);
+    color: black;
+}
+
+.info ul li a:hover{
+    color: black;
+    text-decoration: none;
 }
 
 .header-bottom ul {
@@ -64,8 +150,7 @@ main {
 }
 
 .header-bottom ul li a {
-    background: #AFF0B1;
-    color: black;
+    color:white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,5 +160,7 @@ main {
 }
 
 .header-bottom ul li a:hover {
-    background-color: #506E51;
+    background-color: rgba(255, 255, 255, 0.521);
+    color: black;
 }
+
