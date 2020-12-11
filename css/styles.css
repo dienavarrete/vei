@@ -68,8 +68,8 @@ hr{
 input{
     border:none;
     background-color: rgba(255, 255, 255, 0);
-    color: white;
-
+    color: black !important;
+    font-weight: bold;
 }
 .titulo-noticias{
     background-color:  white;
@@ -150,18 +150,33 @@ main {
     flex: 1;
 }
 
-.header-bottom ul li a {
-    color:white;
+.btn-modal {
+    color:white !important;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     padding: .5rem;
+    text-decoration: none !important;
+}
+
+.btn-modal:hover {
+    background-color: rgba(255, 255, 255, 0.521);
+    color: black !important;
+    cursor:pointer;
+}
+
+.mail-contacto{
+    color:white;
     text-decoration: none;
 }
 
-.header-bottom ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.521);
-    color: black;
+.area-modal{
+    background-color: #555 !important;
+    color: white;
+    font-weight: lighter;
 }
 
+.close{
+    color: white !important;
+}
