@@ -64,16 +64,27 @@
             <a href="#">Foro 2</a>
             <a href="#">foro 3</a>
         </div>
-        <div class="foro p-2">
-            <div class="cabecera">
-                <h1>Tema: General</h1>
-                <p>Tema para debates y consultas en general. Comisión 02-5900-2C.</p>
-                </p>
-                <button href="#">Volver</button>
-                <button href="#">Ir al final</button>
-                <button href="#">Nuevo mensaje</button>
-                <p>Último mensaje 06/09/2020 18:30:43</p>
-                <p>27 mensajes</p>
+        <div class="foro">
+            <div class="row m-2">
+                <div class="col-6">
+                    <h1>Tema: General</h1>
+                    <p>Tema para debates y consultas en general. Comisión 02-5900-2C.</p>
+                </div>
+                <div class="col-6 text-right">
+                    <button href="#" class="btn-default">Volver</button>
+                    <button href="#" class="btn-default">Ir al final</button>
+                    <button href="#" class="btn-nuevo">Nuevo mensaje</button>
+                    <p class="padding-margin-0 mt-2">Último mensaje hace 3 horas.</p>
+                    <p class="padding-margin-0">27 mensajes</p>
+                </div>
+            </div>
+            <div class="input-group m-3 col-6">
+                <input type="text" class="form-control" placeholder="Ingrese el texto buscado..."  aria-describedby="basic-addon2">
+                <button class="btn btn-outline-secondary" type="button">↓</button>
+                <button class="btn btn-outline-secondary" type="button">↑</button>
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">Buscar</button>
+                </div>
             </div>
             <div class="mensajes p-2">
                 <div class="mensaje p-2">
