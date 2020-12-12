@@ -10,7 +10,6 @@ body, html {
 
 .header {
     background-color:  rgba(76, 175, 80, 1);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,13 +29,19 @@ body, html {
 .logos {
     margin: .5rem 0;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
+    justify-content: space-around;
 
 }
 
+
 .logos img{
     margin: 0.5rem 0;
+}
+
+.miel{
+    width: 50px !important;
 }
 
 hr{
@@ -59,6 +64,8 @@ hr{
     width: 100%;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.521);
+    box-shadow: 0 0 0.5rem 0 black;
+
 
 }
 .formulario{
@@ -66,6 +73,7 @@ hr{
     flex-direction: column;
     align-items: center;
     border:none;
+
 }
 
 input{
@@ -87,13 +95,12 @@ input{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     
 }
 .titulo-noticias h3,h4{
     font-weight: bold;
     color: rgba(76, 175, 80, 1);
-    padding: 0;
     margin: 0;
 }
 
@@ -125,10 +132,10 @@ main {
 
 }
 
-/* .info{
-    position: absolute !important;
-   z-index: 10000 !important;
-} */
+.ayuda-box{
+    display: flex;
+    justify-content: flex-end
+}
 
 .dropdown-toggle{
     color: white;
@@ -136,6 +143,7 @@ main {
 
 .desplegable{
     border-bottom:1px solid gray;
+
 }
 
 .desplegable a{
@@ -150,14 +158,13 @@ main {
     color: rgba(76, 175, 80, 1);
 }
 
-.info ul li:hover{
-    color: white;
-    background-color: rgba(76, 175, 80, 1);
-}
+
 
 .info ul li a:hover{
     color: white;
     text-decoration: none;
+    background-color: rgba(76, 175, 80, 1);
+    color:white;
 }
 
 .header-bottom ul {
@@ -221,6 +228,12 @@ main {
     color: rgba(76, 175, 80, 1);
 }
 
+.card-box{
+    background-color:#AFF0B1;
+    padding:1rem !important;
+
+}
+
 @media screen and (min-width: 47em){
 
     .content {
@@ -245,6 +258,11 @@ main {
 @media screen and (min-width: 60em){
 	.header {
         background-color:  rgba(76, 175, 80, 1);
-        flex: 0 1 50%;
+        flex: 0 1 40%;
     }
+    .logos{
+        display: flex;
+        flex-direction:column;
+    }
+
 }
