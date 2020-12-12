@@ -16,3 +16,18 @@
     display: none;
     padding-left: 5rem;
 }
+
+.padding-margin-0{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-nuevo{
+    background-color:  rgba(76, 175, 80, 1);
+    color: white;
+    border: none;
+}
+
+.btn-default{
+    border: none;
+}
