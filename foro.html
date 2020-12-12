@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div class="header-top">
+        <div class="header-top align-middle">
             <div class="logos">
                 <img class="img-fluid" src="img/logo_unlam_34.png" alt="Logo Unlam">
                 <img class="img-fluid" src="img/logo_miel_34.png" alt="Logo Miel">
@@ -26,7 +26,7 @@
                 <img src="" alt="Perfil">
             </div>
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom align-middle">
             <a href="index.html"><img src="" alt="Home"></a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -94,6 +94,70 @@
                                     praesentium tempora! Recusandae impedit ullam tempora!</p>
                             </div>
                         </div>
+                        <div class="mensaje">
+                            <div class="perfil">
+                                <img src="img/profile.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a ipsum eos iusto
+                                    natus quaerat dolor repudiandae quo maiores excepturi dolorum, dicta alias? Quo,
+                                    praesentium tempora! Recusandae impedit ullam tempora!</p>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <div class="perfil">
+                                <img src="img/profile.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a ipsum eos iusto
+                                    natus quaerat dolor repudiandae quo maiores excepturi dolorum, dicta alias? Quo,
+                                    praesentium tempora! Recusandae impedit ullam tempora!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mensaje">
+                    <div class="perfil">
+                        <img src="img/profile.jpg" alt="" class="avatar">
+                    </div>
+                    <div class="texto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a ipsum eos iusto natus
+                            quaerat dolor repudiandae quo maiores excepturi dolorum, dicta alias? Quo, praesentium
+                            tempora! Recusandae impedit ullam tempora!</p>
+                    </div>
+                    <a href="#" class="ver-mas">5 respuestas ↓</a>
+                    <div class="respuestas">
+                        <div class="mensaje">
+                            <div class="perfil">
+                                <img src="img/profile.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a ipsum eos iusto
+                                    natus quaerat dolor repudiandae quo maiores excepturi dolorum, dicta alias? Quo,
+                                    praesentium tempora! Recusandae impedit ullam tempora!</p>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <div class="perfil">
+                                <img src="img/profile.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a ipsum eos iusto
+                                    natus quaerat dolor repudiandae quo maiores excepturi dolorum, dicta alias? Quo,
+                                    praesentium tempora! Recusandae impedit ullam tempora!</p>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <div class="perfil">
+                                <img src="img/profile.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="texto">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a ipsum eos iusto
+                                    natus quaerat dolor repudiandae quo maiores excepturi dolorum, dicta alias? Quo,
+                                    praesentium tempora! Recusandae impedit ullam tempora!</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -103,23 +167,23 @@
 
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(".mensaje .ver-mas").click(() => {
-                console.log($(this).parent().html());
-            })
-        </script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $('.ver-mas').on('click', function (e) {
+                e.preventDefault();
+                $(this).next(".respuestas").toggle();
+            });
+
+        });
+    </script>
 
 </body>
+
 </html>
