@@ -1,15 +1,88 @@
-.header-top{
-    background-color: white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+body, html {
+    height: 100%;
+    font-family: "Segoe UI", "Open Sans", Arial, sans-serif !important;
 }
 
-.header-bottom{
-    background-color:  rgba(76, 175, 80, 1);
-    display:flex;
-    align-items:flex-start;
+header .usuario .avatar {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.header-top {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom {
+    background-color: rgba(76, 175, 80, 1);
+    display: flex;
+    align-items: flex-start;
+}
+
+.drop {
+    background-color: rgba(76, 175, 80, 1) !important;
+    border: none !important;
+}
+
+.drop:focus {
+    box-shadow: none !important;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-lateral {
+    background-color: #555;
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left:2rem;
+}
+
+.menu-lateral a {
+    text-decoration: none !important;
+    color: white;
+    font-size:25px;
+}
+
+.menu-lateral a:hover{
+    text-decoration:underline !important;
+}
+
+.menu-lateral h1 {
+    font-weight: lighter;
+}
+
+.foro {
+    overflow-y: auto;
+}
+
+.mensaje {
+    border-top: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    margin-top: 1rem;
+}
+
+.mensaje .mensaje-box {
+    display: flex;
+}
+
+.mensaje .perfil .avatar {
+    border-radius: 50%;
+}
+
+.mensaje .texto-box .tiempo-mensaje {
+    color: #bbb;
+    font-size: 12px;
+}
+
+.ver-mas-box {
+    text-align: right;
 }
 
 .respuestas {
