@@ -8,6 +8,35 @@ header .usuario .avatar {
     max-width: 50px;
 }
 
+
+.usuario ul {
+    align-items: stretch;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+}
+
+.usuario ul li {
+    display: flex;
+    align-self: center;
+    margin: 0 .5rem;
+}
+
+.usuario ul li a {
+    text-decoration: none;
+    color: rgba(76, 175, 80, 1);
+}
+
+.usuario ul li a:hover {
+    text-decoration: underline;
+}
+
+header{
+}
+
 .header-top {
     background-color: white;
     display: flex;
@@ -41,16 +70,19 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    padding-left:2rem;
+    padding-left: 1.5rem;
+    padding-top:1.5rem;
 }
 
 .menu-lateral a {
     text-decoration: none !important;
     color: white;
-    font-size:25px;
+    font-size: 20px;
+    padding-left: 1.5rem;
+    font-weight:lighter;
 }
 
-.menu-lateral a:hover{
+.menu-lateral a:hover {
     text-decoration:underline !important;
 }
 
@@ -74,6 +106,7 @@ main {
 
 .mensaje .perfil .avatar {
     border-radius: 50%;
+    max-width: 50%;
 }
 
 .mensaje .texto-box .tiempo-mensaje {
@@ -88,4 +121,19 @@ main {
 .respuestas {
     display: none;
     padding-left: 5rem;
+}
+
+.padding-margin-0{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-nuevo{
+    background-color:  rgba(76, 175, 80, 1);
+    color: white;
+    border: none;
+}
+
+.btn-default{
+    border: none;
 }
