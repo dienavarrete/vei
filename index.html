@@ -12,11 +12,11 @@
 
 <body>
   <div class="content">
-    <div class="header">
+    <div class="header"> 
       <div class="header-top">
-        <div class="btn-group dropend info">
-          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img class="img-fluid" src="img/libro.png" alt="Ayuda" class="info">
+        <div class="btn-group info float-right">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"aria-expanded="false">
+            Ayuda
           </button>
           <ul class="dropdown-menu menu-info">
             <li class="desplegable"><a href="https://miel.unlam.edu.ar/data2/ayuda/primeros_pasos.pdf"
@@ -44,7 +44,7 @@
                 <input type="password" class="campo-form" id="password" placeholder="Contraseña">
               </div>
             </div>
-            <button class="btn btn-primary btn-block">Ingresar</button>
+            <button class="btn btn-primary btn-block custom-btn">Ingresar</button>
           </form>
         </div>
       </div>
@@ -161,16 +161,18 @@
       </div>
     </div>
     <main>
+      <div class="titulo-noticias">
+        <h3>Primeros Pasos en MIeL</h3>
+      </div>
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bdAO_mi2amE" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item p-4" src="https://www.youtube.com/embed/bdAO_mi2amE" allowfullscreen></iframe>
       </div>
       <div class="titulo-noticias">
-        <h4>v</h4>
         <h3>Noticias UNLaM</h3>
       </div>
       <div class="card-group p-4">
         <div class="card">
-          <img src="img/noticia.jpg" class="card-img-top" alt="...">
+          <img src="img/noticia.jpg" class="card-img-top d-block" alt="...">
           <div class="card-body">
             <h5 class="card-title">LA UNLaM CUMPLE 31 AÑOS</h5>
             <p class="card-text">EL 29 DE SEPTIEMBRE DE 1989, el Senado de la Nación sancionaba la ley que creaba la Universidad Nacional de La Matanza (UNLaM).</p>
@@ -255,6 +257,7 @@
           </div>
     </main>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
