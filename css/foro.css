@@ -8,44 +8,66 @@ header .usuario .avatar {
     max-width: 50px;
 }
 
+.header-top {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem .5rem;;
+
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nombre-menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: flex-end;
+}
+
+.nombre-menu p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .usuario ul {
-    align-items: stretch;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-    justify-content: space-between;
     display: flex;
+    justify-content: center;
     padding: 0;
 }
 
 .usuario ul li {
-    display: flex;
-    align-self: center;
-    margin: 0 .5rem;
+    margin: 0 .1rem;
+    color: rgba(76, 175, 80, 1);
+
 }
 
 .usuario ul li a {
     text-decoration: none;
     color: rgba(76, 175, 80, 1);
+
 }
 
 .usuario ul li a:hover {
     text-decoration: underline;
 }
 
-header {}
-
-.header-top {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header-bottom {
     background-color: rgba(76, 175, 80, 1);
     display: flex;
     align-items: flex-start;
+}
+
+.home{
+    padding: .7rem;
 }
 
 .drop {
@@ -59,24 +81,28 @@ header {}
 
 main {
     display: flex;
-    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
 .menu-lateral {
-    background-color: #555;
-    width: 40%;
+    background-color: #444;
+    height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
-    padding-left: 1.5rem;
-    padding-top: 1.5rem;
+    flex: 0 1 30%;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    position: sticky;
+
 }
 
 .menu-lateral a {
     text-decoration: none !important;
     color: white;
-    font-size: 20px;
-    padding-left: 1.5rem;
+    font-size: 15px;
+    padding-bottom: .3rem;
     font-weight: lighter;
 }
 
@@ -84,58 +110,146 @@ main {
     text-decoration: underline !important;
 }
 
-.menu-lateral h1 {
+.menu-lateral h2 {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.menu-lateral img{
+    padding-right: .5rem;
+}
+
+
+
+.foro {
+    flex: 0 0 80%;
+    overflow-y: auto;
+
+}
+
+.foro h1{
     font-weight: lighter;
 }
 
-.foro {
-    overflow-y: auto;
+.cabecera{
+    display: flex;
+    flex-direction: column;
 }
+
+.breadcrumb a{
+    color: rgba(76, 175, 80, 1);
+}
+
+.contenido-cabecera{
+    direction: flex;
+    justify-content: space-around;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.information p, .information h1{
+    padding:0;
+    margin:0;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.botones-cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.boton{
+    background-color: #9999;
+    border-radius: 0px;
+    border:none !important;
+}
+
+
+.btn-buscador{
+    border-radius:0 !important;
+    background-color: #555;
+
+}
+
+.search{
+    border-radius:0px;
+    border: 0.5px solid black;
+    height: 40px;
+}
+
+.flotante {
+    display:scroll;
+        position:fixed;
+        bottom:200px;
+        right:20px;
+
+}
+
 
 .mensaje {
     border-top: #ccc 1px solid;
     border-left: #ccc 1px solid;
     margin-top: 1rem;
+    margin-left: 1rem;
+    width: 90%;
 }
 
-.mensaje .mensaje-box {
-    display: flex;
+.mensaje a{
+    color:black;
 }
-
 .mensaje .perfil {
     text-align: center;
 }
-
+.mensaje .mensaje-box {
+    display: flex;
+}
 .mensaje .perfil .avatar {
     border-radius: 50%;
     max-width: 50%;
 }
-
 .mensaje .texto-box .tiempo-mensaje {
-    color: #bbb;
+    color: #888;
     font-size: 12px;
 }
 
-.ver-mas-box {
-    text-align: right;
+.mg:hover{
+    border: 2px solid black;
+    border-radius: 50%;
 }
 
 .respuestas {
     display: none;
     padding-left: 5rem;
 }
-
-.padding-margin-0 {
-    margin: 0;
-    padding: 0;
+.ver-mas-box {
+    text-align: right;
 }
 
-.btn-nuevo {
-    background-color: rgba(76, 175, 80, 1);
-    color: white;
-    border: none;
+.reportar-modal{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-.btn-default {
-    border: none;
+.reportar-modal button{
+    width: 30%;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+
+.answer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
 }
