@@ -198,7 +198,6 @@ main {
     font-size: 2.5rem;
 }
 
-
 .mensaje {
     border-top: #ccc 1px solid;
     border-left: #ccc 1px solid;
@@ -225,9 +224,13 @@ main {
     font-size: 12px;
 }
 
+.mg{
+    transform: scale(1);
+    transition: 0.3s;
+}
+
 .mg:hover{
-    border: 2px solid black;
-    border-radius: 50%;
+    transform: scale(1.3);
 }
 
 .respuestas {
