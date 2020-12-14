@@ -189,7 +189,7 @@ main {
 .flotante {
     display:scroll;
     position:fixed;
-    bottom:20px;
+    bottom:40px;
     right:20px;
 }
 
@@ -199,9 +199,11 @@ main {
     border:none !important;
     box-shadow: 2px 2px 5px #555;
     border-radius: 50%;
+    transform: scale(1);
+    transition: 0.3s;
 }
 .flotante i:hover{
-    font-size: 3.2rem;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -266,4 +268,13 @@ main {
     flex-direction: row;
     justify-content: flex-end;
 
+}
+
+.botones-respuesta{
+    display: flex;
+    justify-content:space-between;
+}
+
+.agregar-imagen{
+    width: 30% !important;
 }
