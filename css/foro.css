@@ -73,10 +73,12 @@ header .usuario .avatar {
 .drop {
     background-color: rgba(76, 175, 80, 1) !important;
     border: none !important;
+    border-radius: 0px;
 }
 
-.drop:focus {
-    box-shadow: none !important;
+.drop:hover {
+    box-shadow: 2px 2px 5px #555;
+
 }
 
 main {
@@ -84,6 +86,7 @@ main {
     height: 100%;
     width: 100%;
 }
+
 
 .menu-lateral {
     background-color: #444;
@@ -94,7 +97,6 @@ main {
     flex: 0 1 30%;
     padding-left: 1rem;
     padding-top: .5rem;
-    position: sticky;
 
 }
 
@@ -156,6 +158,11 @@ main {
     margin:0;
 }
 
+.information p{
+    font-size: 13.5px;
+
+}
+
 .btn:focus{
     box-shadow: none;
 }
@@ -173,10 +180,20 @@ main {
     border:none !important;
 }
 
+.boton:hover{
+    box-shadow: 2px 2px 5px #555;
+
+}
+
 
 .btn-buscador{
     border-radius:0 !important;
     background-color: #555;
+
+}
+
+.btn-buscador:hover{
+    box-shadow: 2px 2px 5px #555;
 
 }
 
@@ -213,7 +230,9 @@ main {
     margin-top: 1rem;
     margin-left: 1rem;
     width: 90%;
+    height: 20%;
 }
+
 
 .mensaje a{
     color:black;
@@ -232,6 +251,14 @@ main {
     color: #888;
     font-size: 12px;
 }
+
+[contenteditable="true"] {
+    border:1px solid #333;
+    color:#cdcfd1;
+    background-color: #f5f7fa;
+    font-size: 20px;
+    font-weight: lighter;
+  }
 
 .mg{
     transform: scale(1);
