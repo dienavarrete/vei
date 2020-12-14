@@ -208,6 +208,7 @@ main {
     position:fixed;
     bottom:40px;
     right:20px;
+    z-index: 10000;
 }
 
 .flotante i {
@@ -240,6 +241,15 @@ main {
 .mensaje .perfil {
     text-align: center;
 }
+
+.perfil p{
+    font-weight: bold;
+}
+
+h6{
+    font-weight: lighter;
+    color:grey;
+}
 .mensaje .mensaje-box {
     display: flex;
 }
@@ -250,6 +260,10 @@ main {
 .mensaje .texto-box .tiempo-mensaje {
     color: #888;
     font-size: 12px;
+}
+
+.mensajes{
+    padding:1rem;
 }
 
 [contenteditable="true"] {
@@ -305,3 +319,44 @@ main {
 .agregar-imagen{
     width: 30% !important;
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .menu-lateral{
+        display: none;
+    }
+    .foro{
+        flex: 0 0 100%;
+    }
+
+      .respuestas{
+        padding-left: 0;
+    }
+.mensajes{
+    margin:0;
+    padding:0;
+}
+    .agregar-imagen{
+        width: 50% !important;
+    }
+
+    .avatar{
+        display: none;
+    }
+
+    .mensajes .dropdown{
+        display:none;
+    }
+
+    .information .padding-margin-0{
+        display:none;
+    }
+
+    #reportar-modal{
+        width: 80%;
+        height: 80%;
+        margin-left: 3.5rem;
+        margin-top: 3rem;
+    }
+  }
+
+  
