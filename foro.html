@@ -87,15 +87,15 @@
                 </nav>
                 <div class="row contenido-cabecera">
                     <div class="col-md-6 col-sm-12 information">
-                        <h1>Tema: General</h1>
+                        <h1 id="arriba">Tema: General</h1>
                         <p>Tema para debates y consultas en general. Comisión 02-5900-2C.</p>
                         <p class="padding-margin-0 mt-2">Último mensaje hace 3 horas.</p>
                         <p class="padding-margin-0">27 mensajes</p>
                     </div>
                     <div class="col-md-6 col-sm-12 botones-cabecera">
                         <div>
-                            <button href="#" class="btn boton">Atrás</button>
-                            <button href="#" class="btn boton">Último mensaje</button>
+                            <button class="btn boton">Atrás</button>
+                            <button class="btn boton"><a href="#abajo">Último mensaje</a></button>
                         </div>
                         <div class="input-group p-2 buscador">
                             <input type="text" class="form-control d-inline search"
@@ -666,12 +666,13 @@
                             </form>
                         </div>
                     </div>
-
-
                 </div>
-
+            </div>
+            <div class="final" id="abajo">
+                <button class="btn boton primero"><a href="#arriba">Primer mensaje</a></button>
             </div>
         </div>
+        
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
