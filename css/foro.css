@@ -17,6 +17,9 @@ header .usuario .avatar {
     padding: .2rem .5rem;;
 
 }
+.header-top img{
+    max-width: 30%;
+}
 
 .mi-perfil{
     display: none;
@@ -29,7 +32,7 @@ header .usuario .avatar {
 .nombre-menu{
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: flex-end;
 }
 
@@ -150,6 +153,10 @@ main {
     flex-direction: column;
     
 }
+.information .padding-margin-0{
+    display:none;
+    
+}
 
 .information p, .information h1{
     padding:0;
@@ -165,8 +172,8 @@ main {
     box-shadow: none;
 }
 
-.botones-cabecera{
-    display: none;
+.botones-cabecera .boton{
+    display: none;    
 }
 
 .boton{
@@ -208,7 +215,7 @@ main {
 
 .flotante i {
     color: rgba(76, 175, 80, 1) !important;
-    font-size: 3rem;
+    font-size: 3.5rem;
     border:none !important;
     box-shadow: 2px 2px 5px #555;
     border-radius: 50%;
@@ -239,7 +246,13 @@ main {
 }
 
 .perfil p{
+    padding: 0 1rem;
     font-weight: bold;
+    margin:0;
+}
+
+.mensajes .drop{
+    display:none;
 }
 
 h6{
@@ -255,7 +268,7 @@ h6{
 }
 .mensaje .texto-box .tiempo-mensaje {
     color: #888;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .avatar{
@@ -270,7 +283,7 @@ h6{
     border:1px solid #333;
     color:#cdcfd1;
     background-color: #f5f7fa;
-    font-size: 20px;
+    font-size: 90%;
     font-weight: lighter;
   }
 
@@ -285,7 +298,7 @@ h6{
 
 .respuestas {
     display: none;
-    padding-left: 5rem;
+    padding-left: 2rem;
 }
 .ver-mas-box {
     text-align: right;
@@ -314,7 +327,13 @@ h6{
 .botones-respuesta{
     display: flex;
     justify-content:space-between;
+    flex-direction: column;
 }
+
+.botones-respuesta .btn-primary{
+    height: 20%;
+}
+
 
 .agregar-imagen{
     width: 30% !important;
@@ -324,12 +343,40 @@ h6{
     body{
         font-size: 90%;
     }
+
+    .header-top img{
+        max-width: 100%;
+    }
+    .nombre-menu p{
+        display: flex;
+    }
+    .mi-perfil{
+        display: flex;
+    }
+
+    .information .padding-margin-0{
+        display:none;
+        
+    }
     
     .botones-cabecera{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-end;
+    }
+
+    .botones-respuesta{
+        flex-direction: row;
+    }
+    .botones-respuesta button{
+        margin-top:1rem;
+    }
+    .mensajes .drop{
+        display:inline;
+    }
+    .botones-cabecera .boton{
+        display: inline;    
     }
 }
 
@@ -365,4 +412,16 @@ h6{
         flex: 0 0 80%;
         overflow-y: auto;
     }
+    .information .padding-margin-0{
+        display:flex;
+        
+    }
+
+    .information p{
+        padding-left: .5rem;
+    }
+    .botones-cabecera .boton{
+        display: inline;    
+    }
+
 }
