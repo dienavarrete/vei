@@ -219,6 +219,7 @@ main {
     border-radius: 50%;
     transform: scale(1);
     transition: 0.3s;
+    background-color: white;
 }
 .flotante i:hover{
     transform: scale(1.1);
@@ -320,7 +321,7 @@ h6{
     width: 30% !important;
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 47em) {
     .menu-lateral{
         display: none;
     }
@@ -346,6 +347,9 @@ h6{
     .mensajes .dropdown{
         display:none;
     }
+.perfil{
+    padding: 1rem;
+}
 
     .information .padding-margin-0{
         display:none;
@@ -357,6 +361,27 @@ h6{
         margin-left: 3.5rem;
         margin-top: 3rem;
     }
+
+    .boton{
+        display: none;
+    }
+
+    .nombre-menu p, .nombre-menu .mi-perfil{
+        display: none;
+    }
+
+    .h6{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .perfil p{
+        margin:0;
+    }
   }
 
-  
+  @media screen and (max-width: 28em) {
+    .foro{
+        background-color: black;
+    }
+}
